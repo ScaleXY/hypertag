@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Test and build
+    runs-on: xcode-27
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Select Xcode
+        run: scripts/ci/select-xcode.sh
+      - name: Test RapidCore
+        run: swift test --package-path Packages/RapidCore
+      - name: Test PassService
+        run: swift test --package-path PassService
+      - name: Run the reader transcript
+        run: swift run --package-path Tools/ReaderHarness ReaderHarness transcript
+      - name: Build the app
+        run: |
+          brew install xcodegen
+          xcodegen generate
+          xcodebuild build -project RapidWallet.xcodeproj -scheme RapidWallet -configuration Release \
+            -destination 'generic/platform=iOS Simulator' \
+            -skipPackagePluginValidation -skipMacroValidation CODE_SIGNING_ALLOWED=NO
