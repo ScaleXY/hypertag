@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		022B663A2FB677AA38FA5BDB /* SignatureReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD913F45DF2C30D0D25A4BD4 /* SignatureReviewView.swift */; };
+		057F016CACF4E8A89E2007FD /* NDEFDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286C0351EBC712E21CFB3B6 /* NDEFDecoder.swift */; };
+		0D1FA7D9D52AF218D0F96AC3 /* Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04559E454C8F5C804CD37A2 /* Copy.swift */; };
+		0DA2075C759C35AD0706C73D /* PresentTagIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29673A0CDA4767AE426F26CD /* PresentTagIntent.swift */; };
+		163B9BEC55414AE7654460D5 /* TagDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFFE5F1A8D482863B81B9FB /* TagDetailView.swift */; };
+		1D003F1D260CD621D93E479A /* EmulationKit in Frameworks */ = {isa = PBXBuildFile; productRef = 84199D29AAC12CDB8210BA16 /* EmulationKit */; };
+		242587F2996E69234C7E26E9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AA82355ECAB241E0B20DDD /* SettingsView.swift */; };
+		33175DFD7F0570B5572E7EE7 /* SignerCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6C1AB693EF8D3C4436A51291 /* SignerCore */; };
+		345B67FE0D8FFF169F0A89CF /* UserPresence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4F06958F1597009BD866F /* UserPresence.swift */; };
+		3499F9460252C056DE8B8D20 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D87CE41B13A2894A4BF00 /* Keychain.swift */; };
+		3521CC8D02F69DD92809F243 /* EditableRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEAC2322E3D40CE759A0A2B /* EditableRecord.swift */; };
+		38C38DEFFA2A40DA44773447 /* RapidWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF37E96E3C35FE3CF7767B78 /* RapidWalletApp.swift */; };
+		42AF0EE7814FD45990EDB078 /* SignerTagEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104C233BEF6D681DD140CE1B /* SignerTagEditor.swift */; };
+		491408F5527C4D6CEA215C82 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9E76E4A4F201EB91C5550 /* OnboardingView.swift */; };
+		4F2D681B3A3132AB3D30BA30 /* TagStore in Frameworks */ = {isa = PBXBuildFile; productRef = F8F838F28769F2F050790C2E /* TagStore */; };
+		4F4D804B74ECC5824D82A80A /* TestReaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287623DF64EE6F667AABC7E5 /* TestReaderModel.swift */; };
+		54DC73666304ABAE5836A044 /* PrivacyShield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB9ED1E2F9A025670650CD0 /* PrivacyShield.swift */; };
+		576500C7AA1875282BE855AE /* ReaderDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59562FC8070D5781F0677548 /* ReaderDecoding.swift */; };
+		5BEA993AC040C875A8ABB476 /* TagDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BA81EC7BA1AF50BAEB59E4 /* TagDetailModel.swift */; };
+		650C40D2BC60504FF2AA726F /* Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F856D79DDBCB98B624F945 /* Formatting.swift */; };
+		6CEBA34B7258FF79993119EA /* TagPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C88BEA099E09770ACFAE30C /* TagPresentation.swift */; };
+		74E1C4D9C5A9201D74BE9CF3 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAA0B738ECD1FA8A4FA331D /* AppEnvironment.swift */; };
+		7CCBA665E9F18F1E75EE3ABA /* PassServiceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ED160B8988DE9530EFCB04 /* PassServiceSettings.swift */; };
+		88AC5681BE5F1FDC4D8101F2 /* PresentingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C39761AFAED0D2FABE7739A /* PresentingView.swift */; };
+		88FE4F8A21244CFA5055C5C3 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E09D7D1C36351A92847E9E /* TagListView.swift */; };
+		9D894D956DD9266531F97CB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F580E850276BF73DFC573EF /* Assets.xcassets */; };
+		AD8221545D4C0418C07E894C /* NewTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411F4CAF174426C7C8AADC9 /* NewTagView.swift */; };
+		B7CC836A19C3D1569225267D /* AddPassButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B311BBECB3DD115B3A3CB9C /* AddPassButton.swift */; };
+		B97929217F020644E4821630 /* WalletBridge in Frameworks */ = {isa = PBXBuildFile; productRef = 07D2720F5359A11DAE4632EF /* WalletBridge */; };
+		C481D471DC8448D100DBA503 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD697A65A0FECA1DCF1CB33C /* AppModel.swift */; };
+		DCCB8DED6D55DDC9614F79ED /* RecordFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEC97E170F1CACC0B80E319 /* RecordFields.swift */; };
+		E294342EE0F66E357A6C699E /* TagEngine in Frameworks */ = {isa = PBXBuildFile; productRef = 40E6448D4C518AB38DB2BECA /* TagEngine */; };
+		E588A446F332E70B07BDBFB7 /* NormalTagEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488C00A94307C0896FEAC82 /* NormalTagEditor.swift */; };
+		EA9AD58A93229A1A023760CB /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5AF337B2FA479BE60FAA2D /* SampleData.swift */; };
+		F2B702310B85ECC82C8E1760 /* UnavailableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223AF4A0EE46C782EE06F757 /* UnavailableView.swift */; };
+		F66F914631B2A0DA6129659D /* TestReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6AECEBA73CEABD8B8D8DA1 /* TestReaderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0286C0351EBC712E21CFB3B6 /* NDEFDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDEFDecoder.swift; sourceTree = "<group>"; };
+		0A5AF337B2FA479BE60FAA2D /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		0AB9ED1E2F9A025670650CD0 /* PrivacyShield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyShield.swift; sourceTree = "<group>"; };
+		104C233BEF6D681DD140CE1B /* SignerTagEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignerTagEditor.swift; sourceTree = "<group>"; };
+		1411F4CAF174426C7C8AADC9 /* NewTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTagView.swift; sourceTree = "<group>"; };
+		223AF4A0EE46C782EE06F757 /* UnavailableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnavailableView.swift; sourceTree = "<group>"; };
+		287623DF64EE6F667AABC7E5 /* TestReaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestReaderModel.swift; sourceTree = "<group>"; };
+		29673A0CDA4767AE426F26CD /* PresentTagIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTagIntent.swift; sourceTree = "<group>"; };
+		2E6AECEBA73CEABD8B8D8DA1 /* TestReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestReaderView.swift; sourceTree = "<group>"; };
+		34F856D79DDBCB98B624F945 /* Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatting.swift; sourceTree = "<group>"; };
+		38D4F06958F1597009BD866F /* UserPresence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresence.swift; sourceTree = "<group>"; };
+		3FFFE5F1A8D482863B81B9FB /* TagDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDetailView.swift; sourceTree = "<group>"; };
+		40AA82355ECAB241E0B20DDD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4CEC97E170F1CACC0B80E319 /* RecordFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordFields.swift; sourceTree = "<group>"; };
+		4F580E850276BF73DFC573EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56ED160B8988DE9530EFCB04 /* PassServiceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassServiceSettings.swift; sourceTree = "<group>"; };
+		59562FC8070D5781F0677548 /* ReaderDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderDecoding.swift; sourceTree = "<group>"; };
+		60BA81EC7BA1AF50BAEB59E4 /* TagDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDetailModel.swift; sourceTree = "<group>"; };
+		6B311BBECB3DD115B3A3CB9C /* AddPassButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPassButton.swift; sourceTree = "<group>"; };
+		6C88BEA099E09770ACFAE30C /* TagPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPresentation.swift; sourceTree = "<group>"; };
+		6CAA0B738ECD1FA8A4FA331D /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		6DB7918569814EE1EB71C48F /* RapidWallet.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = RapidWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C39761AFAED0D2FABE7739A /* PresentingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentingView.swift; sourceTree = "<group>"; };
+		8BEAC2322E3D40CE759A0A2B /* EditableRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableRecord.swift; sourceTree = "<group>"; };
+		9A9D87CE41B13A2894A4BF00 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		CEA9E76E4A4F201EB91C5550 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		D488C00A94307C0896FEAC82 /* NormalTagEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTagEditor.swift; sourceTree = "<group>"; };
+		DD913F45DF2C30D0D25A4BD4 /* SignatureReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureReviewView.swift; sourceTree = "<group>"; };
+		E04559E454C8F5C804CD37A2 /* Copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copy.swift; sourceTree = "<group>"; };
+		E65173DD1DF00D1D76C82D50 /* RapidCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RapidCore; path = Packages/RapidCore; sourceTree = SOURCE_ROOT; };
+		F5E09D7D1C36351A92847E9E /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
+		FD697A65A0FECA1DCF1CB33C /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		FF37E96E3C35FE3CF7767B78 /* RapidWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidWalletApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EC54548A384C5BC6E8E7062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E294342EE0F66E357A6C699E /* TagEngine in Frameworks */,
+				33175DFD7F0570B5572E7EE7 /* SignerCore in Frameworks */,
+				4F2D681B3A3132AB3D30BA30 /* TagStore in Frameworks */,
+				1D003F1D260CD621D93E479A /* EmulationKit in Frameworks */,
+				B97929217F020644E4821630 /* WalletBridge in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02550C8A950F708ABDCF3266 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D3DB28397B85D68242245818 /* Resources */,
+				A85E07A4493DA3E242BA4EA7 /* Sources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		07735F046DC80D21895A0059 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				6B311BBECB3DD115B3A3CB9C /* AddPassButton.swift */,
+				E04559E454C8F5C804CD37A2 /* Copy.swift */,
+				34F856D79DDBCB98B624F945 /* Formatting.swift */,
+				9A9D87CE41B13A2894A4BF00 /* Keychain.swift */,
+				56ED160B8988DE9530EFCB04 /* PassServiceSettings.swift */,
+				0AB9ED1E2F9A025670650CD0 /* PrivacyShield.swift */,
+				38D4F06958F1597009BD866F /* UserPresence.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		085F366A0997D0874253D175 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DB7918569814EE1EB71C48F /* RapidWallet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F9955C593E69C1201442FA1 /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				1411F4CAF174426C7C8AADC9 /* NewTagView.swift */,
+				7C39761AFAED0D2FABE7739A /* PresentingView.swift */,
+				DD913F45DF2C30D0D25A4BD4 /* SignatureReviewView.swift */,
+				60BA81EC7BA1AF50BAEB59E4 /* TagDetailModel.swift */,
+				3FFFE5F1A8D482863B81B9FB /* TagDetailView.swift */,
+				F5E09D7D1C36351A92847E9E /* TagListView.swift */,
+				6C88BEA099E09770ACFAE30C /* TagPresentation.swift */,
+				223AF4A0EE46C782EE06F757 /* UnavailableView.swift */,
+			);
+			path = Tags;
+			sourceTree = "<group>";
+		};
+		673DD32FBD83D289210B7CEB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9E76E4A4F201EB91C5550 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		685DD90765C0429B622A94F6 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				E65173DD1DF00D1D76C82D50 /* RapidCore */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		71ECD259DEBE045175781CE1 /* TestReader */ = {
+			isa = PBXGroup;
+			children = (
+				0286C0351EBC712E21CFB3B6 /* NDEFDecoder.swift */,
+				59562FC8070D5781F0677548 /* ReaderDecoding.swift */,
+				287623DF64EE6F667AABC7E5 /* TestReaderModel.swift */,
+				2E6AECEBA73CEABD8B8D8DA1 /* TestReaderView.swift */,
+			);
+			path = TestReader;
+			sourceTree = "<group>";
+		};
+		72A8159E241E325B896F9488 = {
+			isa = PBXGroup;
+			children = (
+				02550C8A950F708ABDCF3266 /* App */,
+				685DD90765C0429B622A94F6 /* Packages */,
+				085F366A0997D0874253D175 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D68207A65F5910F47048B1C /* Editors */ = {
+			isa = PBXGroup;
+			children = (
+				8BEAC2322E3D40CE759A0A2B /* EditableRecord.swift */,
+				D488C00A94307C0896FEAC82 /* NormalTagEditor.swift */,
+				4CEC97E170F1CACC0B80E319 /* RecordFields.swift */,
+				104C233BEF6D681DD140CE1B /* SignerTagEditor.swift */,
+			);
+			path = Editors;
+			sourceTree = "<group>";
+		};
+		A85E07A4493DA3E242BA4EA7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FF37E96E3C35FE3CF7767B78 /* RapidWalletApp.swift */,
+				C419212F90F371B4A5F3E200 /* Composition */,
+				7D68207A65F5910F47048B1C /* Editors */,
+				B8B08AD06E1A95C343458E3C /* Intents */,
+				673DD32FBD83D289210B7CEB /* Onboarding */,
+				ECBBCD184E17ED0EF41F90BA /* Settings */,
+				07735F046DC80D21895A0059 /* Support */,
+				4F9955C593E69C1201442FA1 /* Tags */,
+				71ECD259DEBE045175781CE1 /* TestReader */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B8B08AD06E1A95C343458E3C /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				29673A0CDA4767AE426F26CD /* PresentTagIntent.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		C419212F90F371B4A5F3E200 /* Composition */ = {
+			isa = PBXGroup;
+			children = (
+				6CAA0B738ECD1FA8A4FA331D /* AppEnvironment.swift */,
+				FD697A65A0FECA1DCF1CB33C /* AppModel.swift */,
+				0A5AF337B2FA479BE60FAA2D /* SampleData.swift */,
+			);
+			path = Composition;
+			sourceTree = "<group>";
+		};
+		D3DB28397B85D68242245818 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F580E850276BF73DFC573EF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ECBBCD184E17ED0EF41F90BA /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				40AA82355ECAB241E0B20DDD /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04844E5E08BA216600D347D7 /* RapidWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA844F6642A1D139E7D701F3 /* Build configuration list for PBXNativeTarget "RapidWallet" */;
+			buildPhases = (
+				B84BA5451193B7B830F8C49B /* Sources */,
+				E15406E9D6C79F73DA448B36 /* Resources */,
+				3EC54548A384C5BC6E8E7062 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RapidWallet;
+			packageProductDependencies = (
+				40E6448D4C518AB38DB2BECA /* TagEngine */,
+				6C1AB693EF8D3C4436A51291 /* SignerCore */,
+				F8F838F28769F2F050790C2E /* TagStore */,
+				84199D29AAC12CDB8210BA16 /* EmulationKit */,
+				07D2720F5359A11DAE4632EF /* WalletBridge */,
+			);
+			productName = RapidWallet;
+			productReference = 6DB7918569814EE1EB71C48F /* RapidWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25221C4E6E3C74D85716BF0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					04844E5E08BA216600D347D7 = {
+						DevelopmentTeam = B2AA43A5CZ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B699D384AFE1CCDAB20743DC /* Build configuration list for PBXProject "RapidWallet" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 72A8159E241E325B896F9488;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				00832F240C2E82EBF63E0B83 /* XCLocalSwiftPackageReference "Packages/RapidCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 085F366A0997D0874253D175 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04844E5E08BA216600D347D7 /* RapidWallet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E15406E9D6C79F73DA448B36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D894D956DD9266531F97CB1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B84BA5451193B7B830F8C49B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7CC836A19C3D1569225267D /* AddPassButton.swift in Sources */,
+				74E1C4D9C5A9201D74BE9CF3 /* AppEnvironment.swift in Sources */,
+				C481D471DC8448D100DBA503 /* AppModel.swift in Sources */,
+				0D1FA7D9D52AF218D0F96AC3 /* Copy.swift in Sources */,
+				3521CC8D02F69DD92809F243 /* EditableRecord.swift in Sources */,
+				650C40D2BC60504FF2AA726F /* Formatting.swift in Sources */,
+				3499F9460252C056DE8B8D20 /* Keychain.swift in Sources */,
+				057F016CACF4E8A89E2007FD /* NDEFDecoder.swift in Sources */,
+				AD8221545D4C0418C07E894C /* NewTagView.swift in Sources */,
+				E588A446F332E70B07BDBFB7 /* NormalTagEditor.swift in Sources */,
+				491408F5527C4D6CEA215C82 /* OnboardingView.swift in Sources */,
+				7CCBA665E9F18F1E75EE3ABA /* PassServiceSettings.swift in Sources */,
+				0DA2075C759C35AD0706C73D /* PresentTagIntent.swift in Sources */,
+				88AC5681BE5F1FDC4D8101F2 /* PresentingView.swift in Sources */,
+				54DC73666304ABAE5836A044 /* PrivacyShield.swift in Sources */,
+				38C38DEFFA2A40DA44773447 /* RapidWalletApp.swift in Sources */,
+				576500C7AA1875282BE855AE /* ReaderDecoding.swift in Sources */,
+				DCCB8DED6D55DDC9614F79ED /* RecordFields.swift in Sources */,
+				EA9AD58A93229A1A023760CB /* SampleData.swift in Sources */,
+				242587F2996E69234C7E26E9 /* SettingsView.swift in Sources */,
+				022B663A2FB677AA38FA5BDB /* SignatureReviewView.swift in Sources */,
+				42AF0EE7814FD45990EDB078 /* SignerTagEditor.swift in Sources */,
+				5BEA993AC040C875A8ABB476 /* TagDetailModel.swift in Sources */,
+				163B9BEC55414AE7654460D5 /* TagDetailView.swift in Sources */,
+				88FE4F8A21244CFA5055C5C3 /* TagListView.swift in Sources */,
+				6CEBA34B7258FF79993119EA /* TagPresentation.swift in Sources */,
+				4F4D804B74ECC5824D82A80A /* TestReaderModel.swift in Sources */,
+				F66F914631B2A0DA6129659D /* TestReaderView.swift in Sources */,
+				F2B702310B85ECC82C8E1760 /* UnavailableView.swift in Sources */,
+				345B67FE0D8FFF169F0A89CF /* UserPresence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		26F005ABED824324BBFB5AC4 /* Debug-HCE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = B2AA43A5CZ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug-HCE";
+		};
+		81B5ECBF4C6C440026565B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = B2AA43A5CZ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9E8486E11B0605B02CBE66B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/RapidWallet.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.scalexy.rapidwallet;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B03BB8D8950279BA971EFE6A /* Debug-HCE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "App/RapidWallet-HCE.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.scalexy.rapidwallet;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG HCE_ENABLED";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-HCE";
+		};
+		C36F562640F3F4898F3AFB04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = B2AA43A5CZ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F91B7CCF0A3A998D392D7169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/RapidWallet.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.scalexy.rapidwallet;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA844F6642A1D139E7D701F3 /* Build configuration list for PBXNativeTarget "RapidWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91B7CCF0A3A998D392D7169 /* Debug */,
+				B03BB8D8950279BA971EFE6A /* Debug-HCE */,
+				9E8486E11B0605B02CBE66B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B699D384AFE1CCDAB20743DC /* Build configuration list for PBXProject "RapidWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C36F562640F3F4898F3AFB04 /* Debug */,
+				26F005ABED824324BBFB5AC4 /* Debug-HCE */,
+				81B5ECBF4C6C440026565B2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		00832F240C2E82EBF63E0B83 /* XCLocalSwiftPackageReference "Packages/RapidCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/RapidCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		07D2720F5359A11DAE4632EF /* WalletBridge */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WalletBridge;
+		};
+		40E6448D4C518AB38DB2BECA /* TagEngine */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TagEngine;
+		};
+		6C1AB693EF8D3C4436A51291 /* SignerCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SignerCore;
+		};
+		84199D29AAC12CDB8210BA16 /* EmulationKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EmulationKit;
+		};
+		F8F838F28769F2F050790C2E /* TagStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TagStore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 25221C4E6E3C74D85716BF0A /* Project object */;
+}

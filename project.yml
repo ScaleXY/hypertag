@@ -1,0 +1,82 @@
+name: RapidWallet
+options:
+  bundleIdPrefix: dev.scalexy
+  deploymentTarget:
+    iOS: "18.2"
+  createIntermediateGroups: true
+  xcodeVersion: "27.1"
+configs:
+  Debug: debug
+  Debug-HCE: debug
+  Release: release
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    DEVELOPMENT_TEAM: B2AA43A5CZ
+    CODE_SIGN_STYLE: Automatic
+    TARGETED_DEVICE_FAMILY: "1"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+packages:
+  RapidCore:
+    path: Packages/RapidCore
+targets:
+  RapidWallet:
+    type: application
+    platform: iOS
+    sources:
+      - path: App/Sources
+      - path: App/Resources
+    dependencies:
+      - package: RapidCore
+        product: TagEngine
+      - package: RapidCore
+        product: SignerCore
+      - package: RapidCore
+        product: TagStore
+      - package: RapidCore
+        product: EmulationKit
+      - package: RapidCore
+        product: WalletBridge
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Rapid Wallet
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        NSFaceIDUsageDescription: Rapid Wallet uses Face ID to protect the signing keys in your tags.
+        NSLocalNetworkUsageDescription: Rapid Wallet connects to your pass service on the local network to create Wallet passes.
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        CFBundleURLTypes:
+          - CFBundleURLName: dev.scalexy.rapidwallet
+            CFBundleURLSchemes: [rapidwallet]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.scalexy.rapidwallet
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+      configs:
+        Debug:
+          CODE_SIGN_ENTITLEMENTS: App/RapidWallet.entitlements
+        Debug-HCE:
+          CODE_SIGN_ENTITLEMENTS: App/RapidWallet-HCE.entitlements
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG HCE_ENABLED
+        Release:
+          CODE_SIGN_ENTITLEMENTS: App/RapidWallet.entitlements
+schemes:
+  RapidWallet:
+    build:
+      targets:
+        RapidWallet: all
+    run:
+      config: Debug
+  RapidWallet-HCE:
+    build:
+      targets:
+        RapidWallet: all
+    run:
+      config: Debug-HCE

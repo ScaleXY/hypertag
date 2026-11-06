@@ -1,0 +1,21 @@
+.build/
+.swiftpm/
+*.xcodeproj
+
+# Signing credentials and tokens
+*.pem
+*.key
+*.p12
+*.pfx
+*.cer
+*.crt
+*.csr
+*.der
+*.srl
+.env
+.env.*
+certs/
+secrets/
+
+# Signed passes
+*.pkpass

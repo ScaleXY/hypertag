@@ -1,0 +1,18 @@
+.DS_Store
+.build/
+.swiftpm/
+DerivedData/
+build/
+xcuserdata/
+*.xcuserstate
+
+# Signing credentials and build output
+*.p8
+*.p12
+*.pfx
+*.mobileprovision
+*.ipa
+*.xcarchive
+*.pkpass
+.env
+.env.*
