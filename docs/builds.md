@@ -14,6 +14,8 @@ gh workflow run distribute.yml --repo ScaleXY/hypertag -f target=both
 | `development` | An `.ipa` artifact that runs on devices registered with the team |
 | `both` | One archive, exported both ways |
 
+TestFlight uploads need an app record in App Store Connect for `dev.scalexy.rapidwallet`. Without one, the upload fails with "App record … not found", though a `both` run still keeps its development build.
+
 Each run regenerates its profiles, so devices registered in the developer portal are included in the next build.
 
 To install a development build on a connected iPhone:
